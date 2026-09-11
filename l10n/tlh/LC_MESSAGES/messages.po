@@ -1,17 +1,20 @@
 # Klingon (tlhIngan Hol) translation for SeedSigner.
 # Latin transliteration; the pIqaD script needs a font the device does not carry.
 #
-# Intentionally partial. Roots are attested in Marc Okrand's Klingon Dictionary;
-# multi-word entries use canonical word-building (yI- imperative, -moH causative,
-# -Ha' undo, -lIj your, -mey plural). Untranslated strings fall back to English,
-# which includes every security warning: Klingon has no vocabulary for "Native
-# Segwit" or "derivation path", and inventing some on a bitcoin signing device
-# would be worse than leaving it in English.
+# Intentionally partial: 75 of 420 strings. Roots are attested in Marc Okrand's
+# Klingon Dictionary; multi-word entries use canonical word-building (yI-
+# imperative, -moH causative, -Ha' undo, -lIj your, -mey plural, -Daq locative,
+# -qa' again). Untranslated strings fall back to English, which includes every
+# security warning: Klingon has no vocabulary for "Native Segwit" or "derivation
+# path", and inventing some on a bitcoin signing device would be worse than
+# leaving it in English.
 #
 # Notable choices:
 #   Settings -> SeHlaw   "control panel" (attested)
 #   Seeds    -> tIrmey   tIr is "grain"; English "seed" is the same metaphor
 #   Verify   -> yI'ol    'ol is "verify" (attested)
+#   Advanced -> Qatlh    "be difficult"; no Klingon term for "advanced"
+#   Skip     -> yIlIj    "forget it"
 #
 msgid ""
 msgstr ""
@@ -23,6 +26,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/seedsigner/gui/screens/psbt_screens.py
+msgid "Review details"
+msgstr "De' yIlegh"
 
 #: src/seedsigner/gui/screens/scan_screens.py src/seedsigner/gui/screens/tools_screens.py
 msgid "back"
@@ -57,6 +64,10 @@ msgstr "jIyaj"
 #: src/seedsigner/gui/screens/screen.py src/seedsigner/views/scan_views.py src/seedsigner/views/view.py
 msgid "Error"
 msgstr "Qagh"
+
+#: src/seedsigner/gui/screens/screen.py
+msgid "Restarting"
+msgstr "taghqa'"
 
 #: src/seedsigner/gui/screens/seed_screens.py
 msgid "Review Message"
@@ -105,6 +116,14 @@ msgstr "chu'"
 msgid "Disabled"
 msgstr "chu'Ha'"
 
+#: src/seedsigner/models/settings_definition.py
+msgid "Prompt"
+msgstr "ghel"
+
+#: src/seedsigner/models/settings_definition.py
+msgid "Required"
+msgstr "poQ"
+
 #. QR code density option: Low, Medium, High
 #: src/seedsigner/models/settings_definition.py
 msgid "Low"
@@ -128,9 +147,31 @@ msgstr "Hol"
 msgid "Message signing"
 msgstr "QIn qI'"
 
+#. Hardware settings option to specify the screen driver (e.g. st7789 vs
+#. ili9341)
+#: src/seedsigner/models/settings_definition.py
+msgid "Display type"
+msgstr "HaSta"
+
+#: src/seedsigner/views/psbt_views.py src/seedsigner/views/seed_views.py src/seedsigner/views/tools_views.py
+msgid "Scan a seed"
+msgstr "tIr yIlegh"
+
 #: src/seedsigner/views/psbt_views.py src/seedsigner/views/view.py
 msgid "Continue"
 msgstr "yItaH"
+
+#: src/seedsigner/views/scan_views.py src/seedsigner/views/view.py
+msgid "Back to Main Menu"
+msgstr "juHDaq yIchegh"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Load a seed"
+msgstr "tIr yIlo'"
+
+#: src/seedsigner/views/seed_views.py
+msgid "In-Memory Seeds"
+msgstr "tIrmey"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Sign Message"
@@ -139,6 +180,10 @@ msgstr "QIn yIqI'"
 #: src/seedsigner/views/seed_views.py
 msgid "Create a seed"
 msgstr "tIr yIchenmoH"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Load a Seed"
+msgstr "tIr yIlo'"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Review & edit"
@@ -157,12 +202,20 @@ msgid "Keep seed"
 msgstr "yIpol"
 
 #: src/seedsigner/views/seed_views.py
+msgid "Backup seed"
+msgstr "tIr yIpol"
+
+#: src/seedsigner/views/seed_views.py
 msgid "Discard seed"
 msgstr "tIr yIwoD"
 
 #: src/seedsigner/views/seed_views.py
 msgid "View seed words"
 msgstr "mu'mey yIlegh"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Backup Seed"
+msgstr "tIr yIpol"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Seed Words"
@@ -184,6 +237,14 @@ msgstr "yInIDqa'"
 msgid "Verify"
 msgstr "yI'ol"
 
+#: src/seedsigner/views/seed_views.py
+msgid "Skip"
+msgstr "yIlIj"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Review seed words"
+msgstr "mu'mey yIlegh"
+
 #. User selected the wrong word during the mnemonic backup test (e.g.
 #. incorrectly said the 5th word was "zoo")
 #: src/seedsigner/views/seed_views.py
@@ -198,6 +259,14 @@ msgstr "Qagh!"
 msgid "Cancel"
 msgstr "yIqIl"
 
+#: src/seedsigner/views/settings_views.py
+msgid "Advanced"
+msgstr "Qatlh"
+
+#: src/seedsigner/views/settings_views.py
+msgid "Hardware"
+msgstr "jan"
+
 #: src/seedsigner/views/tools_views.py src/seedsigner/views/view.py
 msgid "Tools"
 msgstr "janmey"
@@ -209,6 +278,14 @@ msgstr "wa'maH cha' mu'mey"
 #: src/seedsigner/views/tools_views.py
 msgid "24 words"
 msgstr "cha'maH loS mu'mey"
+
+#: src/seedsigner/views/tools_views.py
+msgid "Mnemonic Length"
+msgstr "mu'mey mI'"
+
+#: src/seedsigner/views/tools_views.py
+msgid "Load seed"
+msgstr "tIr yIlo'"
 
 #: src/seedsigner/views/view.py
 msgid "Scan"
@@ -225,6 +302,27 @@ msgstr "yItaghqa'"
 #: src/seedsigner/views/view.py
 msgid "Power off"
 msgstr "yIchu'Ha'"
+
+#: src/seedsigner/views/view.py
+msgid "Back to main menu"
+msgstr "juHDaq yIchegh"
+
+#. Button option to alter a setting
+#: src/seedsigner/views/view.py
+msgid "Change Setting"
+msgstr "yIchoH"
+
+#: src/seedsigner/views/view.py
+msgid "Update setting"
+msgstr "yIchoH"
+
+#: src/seedsigner/views/view.py
+msgid "Option Disabled"
+msgstr "chu'Ha'"
+
+#: src/seedsigner/views/view.py
+msgid "Action Required"
+msgstr "Qu'"
 
 #: src/seedsigner/views/scan_views.py
 msgid "raw data"
