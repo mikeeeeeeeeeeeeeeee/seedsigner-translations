@@ -1,0 +1,156 @@
+# Klingon (tlhIngan Hol) translation for SeedSigner.
+# Latin transliteration; the pIqaD script needs a font the device does not carry.
+#
+# Intentionally partial. Only strings with attested vocabulary from Marc Okrand's
+# Klingon Dictionary are translated; everything else falls back to English, which
+# includes every security warning. Klingon has no vocabulary for "Native Segwit",
+# "derivation path" and the like, and inventing some on a bitcoin signing device
+# would be worse than leaving it in English.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: seedsigner 0.8.7\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Language: tlh\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/seedsigner/gui/screens/scan_screens.py src/seedsigner/gui/screens/tools_screens.py
+msgid "back"
+msgstr "yIchegh"
+
+#: src/seedsigner/gui/screens/screen.py src/seedsigner/gui/screens/seed_screens.py src/seedsigner/views/seed_views.py
+msgid "Success!"
+msgstr "Qapla'!"
+
+#: src/seedsigner/gui/screens/screen.py src/seedsigner/gui/screens/seed_screens.py src/seedsigner/views/seed_views.py
+msgid "OK"
+msgstr "lu'"
+
+#: src/seedsigner/gui/screens/screen.py
+msgid "Caution"
+msgstr "yIyep"
+
+#: src/seedsigner/gui/screens/screen.py
+msgid "I understand"
+msgstr "jIyaj"
+
+#: src/seedsigner/gui/screens/screen.py src/seedsigner/views/scan_views.py src/seedsigner/views/view.py
+msgid "Error"
+msgstr "Qagh"
+
+#: src/seedsigner/gui/screens/seed_screens.py
+msgid "Review Message"
+msgstr "QIn yIlegh"
+
+#. Short for "Next step"
+#: src/seedsigner/gui/screens/seed_screens.py src/seedsigner/views/psbt_views.py src/seedsigner/views/seed_views.py src/seedsigner/views/tools_views.py
+msgid "Next"
+msgstr "veb"
+
+#: src/seedsigner/gui/screens/seed_screens.py src/seedsigner/views/seed_views.py
+msgid "Sign message"
+msgstr "QIn yIqI'"
+
+#. Blank the screen
+#: src/seedsigner/gui/screens/settings_screens.py
+msgid "Clear"
+msgstr "yIteq"
+
+#: src/seedsigner/gui/screens/settings_screens.py
+msgid "Exit"
+msgstr "yImej"
+
+#: src/seedsigner/gui/screens/settings_screens.py src/seedsigner/views/view.py
+msgid "Home"
+msgstr "juH"
+
+#. A prompt to the user to either accept or reshoot the image
+#: src/seedsigner/gui/screens/tools_screens.py
+msgid "accept"
+msgstr "yIlaj"
+
+#: src/seedsigner/models/settings_definition.py
+msgid "Language"
+msgstr "Hol"
+
+#: src/seedsigner/views/psbt_views.py src/seedsigner/views/view.py
+msgid "Continue"
+msgstr "yItaH"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Sign Message"
+msgstr "QIn yIqI'"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Review & edit"
+msgstr "yIlegh"
+
+#: src/seedsigner/views/seed_views.py src/seedsigner/views/tools_views.py
+msgid "Discard"
+msgstr "yIwoD"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Done"
+msgstr "pItlh"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Seed Words"
+msgstr "mu'mey"
+
+#: src/seedsigner/views/seed_views.py
+msgid "12 Words"
+msgstr "wa'maH cha' mu'mey"
+
+#: src/seedsigner/views/seed_views.py
+msgid "24 Words"
+msgstr "cha'maH loS mu'mey"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Try again"
+msgstr "yInIDqa'"
+
+#. User selected the wrong word during the mnemonic backup test (e.g.
+#. incorrectly said the 5th word was "zoo")
+#: src/seedsigner/views/seed_views.py
+msgid "Wrong Word!"
+msgstr "mu' lughbe'!"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Error!"
+msgstr "Qagh!"
+
+#: src/seedsigner/views/seed_views.py
+msgid "Cancel"
+msgstr "yIqIl"
+
+#: src/seedsigner/views/tools_views.py src/seedsigner/views/view.py
+msgid "Tools"
+msgstr "janmey"
+
+#: src/seedsigner/views/tools_views.py
+msgid "12 words"
+msgstr "wa'maH cha' mu'mey"
+
+#: src/seedsigner/views/tools_views.py
+msgid "24 words"
+msgstr "cha'maH loS mu'mey"
+
+#: src/seedsigner/views/view.py
+msgid "Scan"
+msgstr "yIlegh"
+
+#: src/seedsigner/views/view.py
+msgid "Restart"
+msgstr "yItaghqa'"
+
+#: src/seedsigner/views/scan_views.py
+msgid "raw data"
+msgstr "De'"
+
+#: src/seedsigner/views/view.py
+msgid "Welcome"
+msgstr "nuqneH"
