@@ -1867,17 +1867,17 @@ msgstr "Einfacher Modus"
 #. Create a new seed using randomness from a camera photo
 #: src/seedsigner/views/tools_views.py
 msgid "New seed (photo)"
-msgstr "Neuer Seed (Foto)"
+msgstr "Seed aus Foto"
 
 #. Create a new seed using randomness from dice rolls
 #: src/seedsigner/views/tools_views.py
 msgid "New seed (dice)"
-msgstr "Neuer Seed (Würfel)"
+msgstr "Seed aus Würfeln"
 
 #. Calculate the checksum-carrying last word of a 12- or 24-word seed
 #: src/seedsigner/views/tools_views.py
 msgid "Calculate final word"
-msgstr "Letztes Wort berechnen"
+msgstr "Letztes Wort finden"
 
 #. Shown when the camera fails to collect enough frames for a new seed. "expected" and "actual" are the number of frames.
 #: src/seedsigner/views/tools_views.py
